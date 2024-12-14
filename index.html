@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main id="project">
+      <div id="image_container">
+        <img src="./assets/left-image.jpg" alt="" class="background_image" />
+        <img class="logo" src="./assets/nike-logo.png" alt="" />
+        <h1 id="title">just do it.</h1>
+      </div>
+      <div id="form_container">
+        <form action="#" method="post">
+          <h3>Create your account.</h3>
+          <div id="input_name">
+            <label for="first_name">First Name:</label>
+            <input type="text" class="name_input" required />
+          </div>
+          <div id="input_last_name">
+            <label for="last_name">Last Name:</label>
+            <input type="text" class="last_name_input" required />
+          </div>
+          <div id="input_email">
+            <label for="email">Email:</label>
+            <input type="email" class="email_input" required />
+          </div>
+          <div id="input_phone_number">
+            <label for="phone_number">Phone Number:</label>
+            <input type="tel" minlength="9" name="number_input" required />
+          </div>
+          <div id="input_password">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              minlength="8"
+            />
+          </div>
+          <div id="input_confirm_password">
+            <label for="confirm_password">Conferma Password:</label>
+            <input
+              type="password"
+              id="confirm_password"
+              name="confirm_password"
+              required
+              pattern=".{8,}"
+              title="Le
+              password non coincidono."
+            />
+          </div>
+          <button type="submit">Create Account</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
